@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Landing Page</title>
+ <style>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
+header {
+    height: 100vh;
+    background: url('image.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3498db; /* Updated: Blue background */
+    position: fixed; /* Updated: Fixed at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Make sure it stays on top of content */
+}
+
+.logo {
+    font-size: 2em;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff; /* White text color for contrast */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.nav-links a:hover {
+    color: #f1c40f; /* Updated: Hover color effect (yellow) */
+}
+
+/* Hero Section */
+.hero {
+    margin-top: 80px; /* Updated: Add margin-top to avoid overlap with fixed navbar */
+}
+
+.hero h1 {
+    color: #fff;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cta {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #ff4500;
+}
+
+/* Main Section */
+main {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.features {
+    margin-bottom: 40px;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.about {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">MyBrand</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to MyBrand</h1>
+            <p>Your one-stop solution for web development.</p>
+            <a href="#features" class="cta">Learn More</a>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section id="features" class="features">
+            <h2>Our Features</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <h3>Feature 1</h3>
+                    <p>Responsive Design</p>
+                </div>
+                <div class="card">
+                    <h3>Feature 2</h3>
+                    <p>Clean Code</p>
+                </div>
+                <div class="card">
+                    <h3>Feature 3</h3>
+                    <p>Customizable</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>We are a passionate web development team with a focus on building user-friendly, modern websites that help our clients achieve their goals.</p>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MyBrand. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
